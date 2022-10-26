@@ -1,0 +1,35 @@
+<div class="login-container">
+  <div class="card-login-container">
+    <div class="logo-container">
+      <img src="../../../assets/images/Alphas-logo.svg" alt="" />
+    </div>
+    <div class="title-container mt-4 mb-4">
+      <div class="title">Bienvenido/a</div>
+      <span> Introduce tus credenciales para acceder </span>
+    </div>
+
+    <div class="form-container">
+      <form>
+        <div class="mb-3 row">
+          <label for="usuario" class="col-sm-3 col-form-label">Usuario:</label>
+          <div class="col-sm-9">
+            <input type="text" [(ngModel)]="user" name="user" class="form-control" id="user" />
+          </div>
+        </div>
+        <div class="mb-3 row">
+          <label for="clave" class="col-sm-3 col-form-label">Contraseña:</label>
+          <div class="col-sm-9">
+            <input type="password" class="form-control" id="password" [(ngModel)]="password" name="password" />
+          </div>
+        </div>
+        <div class="mb-3 row">
+          <div class="col-lg">
+            <button type="submit" class="btn btn-primary" (click)="login()">
+              Acceder
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,27 @@
+.login-container{
+    margin: 0 auto;
+    background: url(../../../assets/images/login_backgorund.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 105VH;
+    margin-top: -48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-login-container {
+    padding: 3rem;
+    background-color: white;
+    border-radius: 8px;
+    min-width: 500px;
+}
+
+.btn {
+    width: 100%;
+}
+
+.title{
+    font-size: 1.5rem;
+    font-weight: bold;
+}

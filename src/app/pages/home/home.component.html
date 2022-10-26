@@ -1,0 +1,27 @@
+<app-header></app-header>
+<div class="container">
+  <div class="row mt-4">
+    <div class="col-lg">
+      <div class="home-title">Directorio de empleados</div>
+    </div>
+  </div>
+
+  <div class="row mt-4">
+    <div class="col-lg-6">
+      <input
+        type="text"
+        class="form-control"
+        id="searchString"
+        name="searchString"
+        placeholder="Buscar..."
+        [(ngModel)]="searchString"
+        (ngModelChange)="find(searchString)"
+      />
+    </div>
+  </div>
+  <div class="row" *ngIf="userList.length > 0">
+    <div class="col-lg-6 mt-4" *ngFor="let user of userList">
+      <app-user [user]="user"></app-user>
+    </div>
+  </div>
+</div>

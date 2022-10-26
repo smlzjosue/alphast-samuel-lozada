@@ -1,0 +1,15 @@
+.img-fix {
+    width: 80px;
+}
+
+.user-info-container{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    max-width: 489px;
+}
+
+.img-user{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
